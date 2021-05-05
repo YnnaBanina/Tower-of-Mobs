@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tower of Mobs</title>
+  </head>
+  <body>
+    <h1>Tower of Mobs!</h1>
+    <!-- TOWER NAMES -->
+    <div>
+      <h2>Starting Tower</h2>
+      <h2>Second Tower</h2>
+      <h2>Winning Tower</h2>
+    </div>
+    <p>Drag the W3Schools image into the rectangle:</p>
+    <!-- need a bunch of other divs too  -->
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br />
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br />
+    <!-- need all of this jazz -->
+    <img
+      id="test"
+      src="PinClipart.com_button-clip-art_781303.png"
+      draggable="true"
+      ondragstart="drag(event)"
+      width="500"
+      height="69"
+    />
+    <img
+      id="test2"
+      src="PinClipart.com_button-clip-art_781303.png"
+      draggable="true"
+      ondragstart="drag(event)"
+      width="336"
+      height="69"
+    />
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,6 @@
+== Progress == 
+! need to fix the stacking issue before game is done  !
+- finished the dragging option.
+    - i can have muliple divs for the drop part, just needs different 'ids' because it will glitch if they have the same name. * MAYBE can add a for let option * 
+    - the images also * NEED * and id for it to work, doesn't matter abt the sizes either. 
+    
