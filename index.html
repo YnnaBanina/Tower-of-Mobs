@@ -4,39 +4,167 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Tower of Mobs</title>
   </head>
   <body>
-    <h1>Tower of Mobs!</h1>
-    <!-- TOWER NAMES -->
-    <div>
-      <h2>Starting Tower</h2>
-      <h2>Second Tower</h2>
-      <h2>Winning Tower</h2>
+    <h1 id="title">-= Tower of Mobs! =-</h1>
+    <!-- first tower  -->
+    <div class="container">
+      <h2 id="fT">Starting Tower</h2>
+      <div
+        id="towerP1"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <div
+        id="towerP2"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <div
+        id="towerP3"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <div
+        id="towerP4"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <div
+        id="towerP5"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <div
+        id="towerP6"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <!-- winning Tower -->
+      <h2 id="wT">Winning Tower</h2>
+      <div
+        id="tower3P1"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <div
+        id="tower3P2"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <div
+        id="tower3P3"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <div
+        id="tower3P4"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <div
+        id="tower3P5"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <div
+        id="tower3P6"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <!-- second tower -->
+      <h2 id="sT">Second Tower</h2>
+      <div
+        id="tower2P1"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <div
+        id="tower2P2"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <div
+        id="tower2P3"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <div
+        id="tower2P4"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <div
+        id="tower2P5"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
+      <div
+        id="tower2P6"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <br />
     </div>
-    <p>Drag the W3Schools image into the rectangle:</p>
-    <!-- need a bunch of other divs too  -->
-    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-    <br />
-    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-    <br />
-    <!-- need all of this jazz -->
     <img
-      id="test"
-      src="PinClipart.com_button-clip-art_781303.png"
+      id="head"
+      src="photos/1.jpg"
       draggable="true"
       ondragstart="drag(event)"
-      width="500"
-      height="69"
     />
     <img
-      id="test2"
-      src="PinClipart.com_button-clip-art_781303.png"
+      id="head2"
+      src="photos/2.jpg"
       draggable="true"
       ondragstart="drag(event)"
-      width="336"
-      height="69"
+    />
+    <img
+      id="head3"
+      src="photos/3.jpg"
+      draggable="true"
+      ondragstart="drag(event)"
+    />
+    <img
+      id="head4"
+      src="photos/4.jpg"
+      draggable="true"
+      ondragstart="drag(event)"
+    />
+    <img
+      id="head5"
+      src="photos/5.jpg"
+      draggable="true"
+      ondragstart="drag(event)"
+    />
+    <img
+      id="head6"
+      src="photos/6.jpg"
+      draggable="true"
+      ondragstart="drag(event)"
     />
   </body>
   <script src="script.js"></script>

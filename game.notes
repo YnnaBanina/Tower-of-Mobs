@@ -3,4 +3,33 @@
 - finished the dragging option.
     - i can have muliple divs for the drop part, just needs different 'ids' because it will glitch if they have the same name. * MAYBE can add a for let option * 
     - the images also * NEED * and id for it to work, doesn't matter abt the sizes either. 
-    
+
+================> " DISABLE ATTRIBUTE?? TAKE OFF EVENTLISTENERS " 
+
+================> Jurgen <================
+-  ParseInt to convert number from a string to an actual number 
+- Set the value of the image as the image's id.
+- It will be a string. Use query selector to obtain as a variable for the event handler.
+- Be sure to use parseInt() method to turn the number from a string to an actual number.
+- Use that number as a value for conditionals to be able to stack the towers accordingly.
+" figure out value of id " 
+[html]
+<img src"hashfalksdjfl;" id="2"/>
+[end]
+[java]
+let idNo = img.querySelector([id])
+let imgNo = parseInt(idNo)
+[end]
+
+== MVP Goals =============================
+- As a player, I'd like distinctive pieces. Therefore I know what pieces I am supposed to grab.
+- As a player, I'd like to see colors. To identify the pieces.
+- As a player, I'd like for some instructions so I can learn how to play the game.
+- As a player, I'd like to know which tower I am supposed to move the mobs to.
+- As a player, I'd like to be able to press a restart button, just in case I mess up so bad I have to restart.
+== Stretch Goals ===========================
+- As an admin, I'd like for there to be a winner popup. So my player knows when the game is over.
+- As an admin, I'd like for there to be mob noises, so I can hear when I move the pieces. (API)
+- As an admin, I'd like to add a timer gamemode, so players can have more of a challenge.
+
+== FINISHED GOALS ===========================

@@ -3,15 +3,157 @@ body {
   padding: 0;
   margin: 0;
 }
-#div1 {
+#title {
+  text-align: center;
+  font-family: "Freckle Face", cursive;
+  font-size: 100px;
+  margin-top: 0;
+  color: purple;
+  text-shadow: plum 5px 5px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* container for the grid to work  */
+.container {
+  margin-left: 50px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/* -----------------first tower */
+#fT {
+  padding-left: 95px;
+  grid-row: 7;
+}
+#towerP1 {
   width: 350px;
-  height: 70px;
-  padding: 10px;
+  height: 28px;
+  grid-row: 1;
   border: 1px solid #aaaaaa;
 }
-#div2 {
+#towerP2 {
   width: 350px;
-  height: 70px;
-  padding: 10px;
+  height: 28px;
+  grid-row: 2;
+  border: 1px solid #aaaaaa;
+}
+#towerP3 {
+  width: 350px;
+  height: 28px;
+  grid-row: 3;
+  border: 1px solid #aaaaaa;
+}
+#towerP4 {
+  width: 350px;
+  height: 28px;
+  grid-row: 4;
+  border: 1px solid #aaaaaa;
+}
+#towerP5 {
+  width: 350px;
+  height: 28px;
+  grid-row: 5;
+  border: 1px solid #aaaaaa;
+}
+#towerP6 {
+  width: 350px;
+  height: 28px;
+  grid-row: 6;
+  border: 1px solid #aaaaaa;
+}
+/* ------------------------winning tower */
+#wT {
+  padding-left: 95px;
+  grid-row: 7;
+}
+#tower3P1 {
+  width: 350px;
+  height: 28px;
+  grid-row: 1;
+  grid-column: 3;
+  border: 1px solid #aaaaaa;
+}
+#tower3P2 {
+  width: 350px;
+  height: 28px;
+  grid-row: 2;
+  grid-column: 3;
+  border: 1px solid #aaaaaa;
+}
+#tower3P3 {
+  width: 350px;
+  height: 28px;
+  grid-row: 3;
+  grid-column: 3;
+  border: 1px solid #aaaaaa;
+}
+#tower3P4 {
+  width: 350px;
+  height: 28px;
+  grid-row: 4;
+  grid-column: 3;
+  border: 1px solid #aaaaaa;
+}
+#tower3P5 {
+  width: 350px;
+  height: 28px;
+  grid-row: 5;
+  grid-column: 3;
+  border: 1px solid #aaaaaa;
+}
+#tower3P6 {
+  width: 350px;
+  height: 28px;
+  grid-row: 6;
+  grid-column: 3;
+  border: 1px solid #aaaaaa;
+}
+/* ---------------------second tower */
+#sT {
+  padding-left: 95px;
+  grid-row: 7;
+}
+#tower2P1 {
+  width: 350px;
+  height: 28px;
+  grid-row: 1;
+  grid-column: 2;
+  border: 1px solid #aaaaaa;
+}
+#tower2P2 {
+  width: 350px;
+  height: 28px;
+  grid-row: 2;
+  grid-column: 2;
+  border: 1px solid #aaaaaa;
+}
+#tower2P3 {
+  width: 350px;
+  height: 28px;
+  grid-row: 3;
+  grid-column: 2;
+  border: 1px solid #aaaaaa;
+}
+#tower2P4 {
+  width: 350px;
+  height: 28px;
+  grid-row: 4;
+  grid-column: 2;
+  border: 1px solid #aaaaaa;
+}
+#tower2P5 {
+  width: 350px;
+  height: 28px;
+  grid-row: 5;
+  grid-column: 2;
+  border: 1px solid #aaaaaa;
+}
+#tower2P6 {
+  width: 350px;
+  height: 28px;
+  grid-row: 6;
+  grid-column: 2;
   border: 1px solid #aaaaaa;
 }
