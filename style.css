@@ -46,12 +46,12 @@ ul.container1 {
 }
 
 /* ---------------------second tower */
-#hdr3 {
-  grid-column: 3;
+#hdr2 {
+  grid-column: 2;
   grid-row: 2;
   padding: 0 50px 0 120px;
 }
-ul.container3 {
+ul.container2 {
   grid-column: 2;
   grid-row: 1;
   width: 350px;
@@ -61,19 +61,19 @@ ul.container3 {
   display: flex;
   flex-direction: column-reverse;
 }
-#tower3 {
+#tower2 {
   width: 350px;
   height: 205px;
   border: 5px solid purple;
   border-bottom: purple solid 15px;
 }
 /* ------------------------third tower */
-#hdr2 {
-  grid-column: 2;
+#hdr3 {
+  grid-column: 3;
   grid-row: 2;
   padding: 0 50px 0 120px;
 }
-ul.container2 {
+ul.container3 {
   grid-column: 3;
   grid-row: 1;
   padding-inline-start: 0%;
@@ -83,7 +83,7 @@ ul.container2 {
 h2 {
   padding-left: 95px;
 }
-#tower2 {
+#tower3 {
   width: 350px;
   height: 205x;
   border: 5px solid purple;

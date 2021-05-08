@@ -1,5 +1,5 @@
 console.log(`attached`);
-
+// --------ALLOWS THE DRAG AND DROP OPTION
 function allowDrop(event) {
   event.preventDefault();
 }
@@ -11,12 +11,34 @@ function drop(event) {
   let data = event.dataTransfer.getData("text");
   event.target.appendChild(document.getElementById(data));
 }
-let test = document.querySelector("#testTower");
-let imgs = document.querySelectorAll("img");
-for (let i = 0; i < imgs.length; i++) {
-  // console.log(`${imgs[i].src}`);
-  let winningT = document.querySelector("testTower");
-  if (winningT.includes("IMG")) {
-    console.log(`worked`);
+
+// --------TURNS ALL OF THE IMG CLASSNAMES INTO NUMBERS
+function parseImg() {
+  let imgs = document.querySelectorAll("img");
+  for (let i = 0; i < imgs.length; i++) {
+    let imgNum = imgs[i].className;
+    let imgParse = parseInt(imgNum);
+    console.log(imgParse);
+  }
+}
+// parseImg() WORKED
+
+// ---------GRABBING THE UL TO CHECK IF THERE IS AN IMG TAG AND THEN CHECK THE CLASSNAME FOR THE NUMBER
+function checkUL() {
+  let uL = document.querySelectorAll("ul");
+  for (let i = 0; i < uL.length; i++) {
+    console.log(uL[i]);
+  }
+}
+checkUL();
+
+// ----------CHECKING IF UL HAS IMAGES
+let test = document.querySelectorAll("ul");
+for (let i = 0; i < test.length; i++) {
+  let pic = document.querySelectorAll("img");
+  for (let j = 0; j < pic.length; j++) {
+    if (test[i].contains(pic[i])) {
+      console.log(`yes`);
+    }
   }
 }
