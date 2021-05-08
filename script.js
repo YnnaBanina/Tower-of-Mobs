@@ -1,4 +1,17 @@
 console.log(`attached`);
+// OPENING INSTRUCTIONS
+const openInfo = document.querySelector("#open");
+const modal = document.querySelector("#modal");
+const closeInfo = document.querySelector("#close");
+
+const open = () => {
+  modal.style.display = "block";
+};
+openInfo.addEventListener("click", open);
+const close = () => {
+  modal.style.display = "none";
+};
+closeInfo.addEventListener("click", close);
 // --------ALLOWS THE DRAG AND DROP OPTION
 function allowDrop(event) {
   event.preventDefault();
@@ -30,7 +43,7 @@ function checkUL() {
     console.log(uL[i]);
   }
 }
-checkUL();
+// checkUL(); WORKED
 
 // ----------CHECKING IF UL HAS IMAGES
 let test = document.querySelectorAll("ul");

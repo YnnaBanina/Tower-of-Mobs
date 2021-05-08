@@ -9,13 +9,36 @@
       href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia&effect=neon"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Tower of Mobs</title>
   </head>
   <body>
+    <button id="open">Info</button>
+    <div id="modal">
+      <div id="textbox">
+        <a id="close" href="#">Close</a>
+        <h1 id="mTitle" class="font-effect-neon">
+          Learn How to Play Tower of Mobs
+        </h1>
+        <h2 id="explain">~~~~What is Tower of Mobs?~~~~</h2>
+        <ul>
+          <li id="info2">
+            The goal is to move all the mobs from the left tower to the right
+            tower, adhering to the following rules
+          </li id="info2">
+          <li id="info2">Move only one image at a time</li id="info2">
+          <li id="info2">An image can not be placed on top of the image prior</li id="info2">
+          <li id="info2">All images MUST connect on the last tower</li id="info2">
+        </ul>
+      </div>
+    </div>
     <h1 id="title">-= Tower of Mobs! =-</h1>
     <!-- first tower  -->
-    <div>
+    <div class="fullContainer">
       <h2 id="hdr1">Starting Tower</h2>
       <ul
         class="container1"

@@ -22,8 +22,6 @@ let imgNo = parseInt(idNo)
 [end]
 
 == MVP Goals =============================
-- As a player, I'd like distinctive pieces. Therefore I know what pieces I am supposed to grab.
-- As a player, I'd like to see colors. To identify the pieces.
 - As a player, I'd like for some instructions so I can learn how to play the game.
 - As a player, I'd like to know which tower I am supposed to move the mobs to.
 - As a player, I'd like to be able to press a restart button, just in case I mess up so bad I have to restart.
@@ -33,3 +31,5 @@ let imgNo = parseInt(idNo)
 - As an admin, I'd like to add a timer gamemode, so players can have more of a challenge.
 
 == FINISHED GOALS ===========================
+- As a player, I'd like distinctive pieces. Therefore I know what pieces I am supposed to grab.
+- As a player, I'd like to see colors. To identify the pieces.
