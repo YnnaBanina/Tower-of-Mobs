@@ -1,4 +1,3 @@
-console.log(`attached`);
 // OPENING INSTRUCTIONS
 const openInfo = document.querySelector("#open");
 const modal = document.querySelector("#modal");
@@ -12,46 +11,58 @@ const close = () => {
   modal.style.display = "none";
 };
 closeInfo.addEventListener("click", close);
-// --------ALLOWS THE DRAG AND DROP OPTION
+
+// --------hovers over to allow the drop.
 function allowDrop(event) {
   event.preventDefault();
 }
+
+//------ number to compare from the drag event (global)
+let holding = [];
+let holding2 = [];
 function drag(event) {
   event.dataTransfer.setData("text", event.target.id);
+  // --------TURNS THE IMG CLASSNAMES INTO NUMBERS
+  let currentImg = event.target.className;
+  let parseCurrentImg = parseInt(currentImg);
+  console.log(`number being held`);
+  console.log(parseCurrentImg);
+  holding.push(parseCurrentImg);
+  console.log(`array of the holding element. showing the number being held`);
+  console.log(holding);
 }
+
 function drop(event) {
   event.preventDefault();
-  let data = event.dataTransfer.getData("text");
-  event.target.appendChild(document.getElementById(data));
-}
+  let ulChild = event.target.children;
+  console.log(`logging the ul and what it contains`);
+  console.log(ulChild);
 
-// --------TURNS ALL OF THE IMG CLASSNAMES INTO NUMBERS
-function parseImg() {
-  let imgs = document.querySelectorAll("img");
-  for (let i = 0; i < imgs.length; i++) {
-    let imgNum = imgs[i].className;
-    let imgParse = parseInt(imgNum);
-    console.log(imgParse);
-  }
-}
-// parseImg() WORKED
+  for (let i = 0; i < ulChild.length; i++) {
+    let childClassNum = parseInt(ulChild[i].className);
+    console.log(`logging the top child inside of the ul`);
+    console.log(childClassNum);
+    console.log(`logging holding2`);
+    console.log(holding2);
+    holding2.push(childClassNum);
+    console.log(`after pushing holding2 `);
+    console.log(holding2);
 
-// ---------GRABBING THE UL TO CHECK IF THERE IS AN IMG TAG AND THEN CHECK THE CLASSNAME FOR THE NUMBER
-function checkUL() {
-  let uL = document.querySelectorAll("ul");
-  for (let i = 0; i < uL.length; i++) {
-    console.log(uL[i]);
-  }
-}
-// checkUL(); WORKED
+    //  -------runs as null
+    // console.log(`logging the last child test`);
+    // console.log(lastChild);
 
-// ----------CHECKING IF UL HAS IMAGES
-let test = document.querySelectorAll("ul");
-for (let i = 0; i < test.length; i++) {
-  let pic = document.querySelectorAll("img");
-  for (let j = 0; j < pic.length; j++) {
-    if (test[i].contains(pic[i])) {
-      console.log(`yes`);
+    //---------------comparing the holding array and the children to allow the drop to work
+    if (holding <= holding2) {
+      dropExtended(event);
     }
   }
+  holding.shift();
+  holding2.shift();
+}
+//--------------- second part of the drop function
+function dropExtended(event) {
+  // ---------allowing the drop of to happen
+  let data = event.dataTransfer.getData("text");
+  event.target.appendChild(document.getElementById(data));
 }
