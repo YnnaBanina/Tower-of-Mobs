@@ -42,10 +42,11 @@ function drop(event) {
     let childClassNum = parseInt(ulChild[i].className);
     console.log(`logging the top child inside of the ul`);
     console.log(childClassNum);
-    console.log(`logging holding2`);
+    console.log(`logging holding2 before new disk if placed`);
     console.log(holding2);
+    holding2.pop();
     holding2.push(childClassNum);
-    console.log(`after pushing holding2 `);
+    console.log(`update of holding2 after placing a new disk`);
     console.log(holding2);
 
     //  -------runs as null
@@ -53,9 +54,10 @@ function drop(event) {
     // console.log(lastChild);
 
     //---------------comparing the holding array and the children to allow the drop to work
-    if (holding <= holding2) {
-      dropExtended(event);
-    }
+  }
+  // -------------------create array for each tower
+  if (holding < holding2 || HTMLCollection.length != 0) {
+    dropExtended(event);
   }
   holding.shift();
   holding2.shift();
