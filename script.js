@@ -73,3 +73,8 @@ function dropExtended(event) {
     window.alert(`you win!!!`);
   }
 }
+
+let reset = document.querySelector("#resetGame");
+reset.addEventListener("click", function () {
+  self.location = "index.html";
+});
