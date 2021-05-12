@@ -56,7 +56,7 @@ function drop(event) {
     //---------------comparing the holding array and the children to allow the drop to work
   }
   // -------------------create array for each tower
-  if (holding < holding2 || HTMLCollection.length != 0) {
+  if (holding < holding2 || holding2.length == 0) {
     dropExtended(event);
   }
   holding.shift();
@@ -67,4 +67,9 @@ function dropExtended(event) {
   // ---------allowing the drop of to happen
   let data = event.dataTransfer.getData("text");
   event.target.appendChild(document.getElementById(data));
+  let winningTower = document.querySelector(".container3");
+  let winningTowerChildren = winningTower.children;
+  if (winningTowerChildren.length === 6) {
+    window.alert(`you win!!!`);
+  }
 }
