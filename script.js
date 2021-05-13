@@ -74,7 +74,28 @@ function dropExtended(event) {
   }
 }
 
-let reset = document.querySelector("#resetGame");
-reset.addEventListener("click", function () {
-  self.location = "index.html";
-});
+// ---------------OPENING THE RESET MENU
+const openReset = document.querySelector("#openReset");
+const resetOpened = document.querySelector("#resetOpened");
+const nevermind = document.querySelector("#nevermind");
+const restart = document.querySelector("#continue");
+
+const openR = () => {
+  resetOpened.style.display = "block";
+};
+openReset.addEventListener("click", openR);
+
+const closeR = () => {
+  resetOpened.style.display = "none";
+};
+nevermind.addEventListener("click", closeR);
+
+restart.addEventListener("click", yes);
+
+function yes() {
+  if (confirm(`Yes I'm sure, I'm sure`)) {
+    self.location = "index.html";
+  } else {
+    closeR();
+  }
+}

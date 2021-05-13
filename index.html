@@ -37,7 +37,7 @@
     <h1 id="title">-= Tower of Mobs! =-</h1>
     <!-- first tower  -->
     <div class="fullContainer">
-      <h2 id="hdr1">Starting Tower</h2>
+      <h2 id="hdr1" class="h2">Starting Tower</h2>
       <ul
         class="container1"
         id="tower1"
@@ -88,7 +88,7 @@
         />
       </ul>
       <!-- Second Tower -->
-      <h2 id="hdr2">Second Tower</h2>
+      <h2 id="hdr2" class="h2">Second Tower</h2>
       <ul
         class="container2"
         id="tower2"
@@ -97,7 +97,7 @@
       >
       </ul>
       <!-- Winning tower -->
-      <h2 id="hdr3">Winning Tower</h2>
+      <h2 id="hdr3" class="h2">Winning Tower</h2>
       <ul
         class="container3"
         id="tower3"
@@ -106,7 +106,15 @@
       >
       </ul>
     </div>
-    <button id="resetGame">Reset</button>
+    <button id="openReset">Reset</button>
+    <div id="resetOpened">
+      <div id="resetText">
+        <p>Are You Sure You Want To Restart?</p>
+        <p>You'll Lose Your Progress!!</p>
+        <a href="#" id="nevermind">Close</a>
+        <a href="#" id="continue">Reset</a>
+      </div>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>

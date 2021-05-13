@@ -1,5 +1,18 @@
+/* STYLING THE INFO BOX */
 #modal {
-  background-color: rgba(105, 48, 144, 0.9);
+  background-image: url("/photos/endBackground.png");
+  background-size: contain;
+  display: none;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+#resetOpened {
+  /* background-color: red; */
   display: none;
   height: 100%;
   left: 0;
@@ -10,24 +23,58 @@
   z-index: 1;
 }
 #textbox {
-  background-color: rgb(253, 215, 255);
+  background-size: cover;
   border-radius: 2px;
-  box-shadow: 0 10px 10px rgb(0, 0, 0.4);
-  height: 350px;
+  height: 450px;
   margin: 150px auto;
   padding: 8px;
-  width: 550px;
+  width: 650px;
+}
+#resetText {
+  background-color: blue;
+  border-radius: 2px;
+  height: 450px;
+  margin: 150px auto;
+  padding: 8px;
+  width: 650px;
+}
+div#resetText p {
+  text-align: center;
+}
+#open {
+  padding: 25px 900px;
+  font-size: medium;
+  font-style: oblique;
+  background-image: url("/photos/clouds2.png");
+  background-size: contain;
+  color: white;
+  border: none;
+  text-shadow: gray 2px 2px;
+  cursor: pointer;
 }
 #mTitle {
   text-align: center;
 }
 #explain {
   font-family: cursive;
-  color: blue;
+  color: rgb(245, 116, 137);
+  text-align: center;
+  text-shadow: whitesmoke 1px 1px;
 }
 #info2 {
   list-style-type: circle;
   font-size: large;
+  color: whitesmoke;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: rgb(91, 150, 170) 2px 2px 2px;
+}
+#close {
+  background-image: url("/photos/moon.png");
+  background-size: cover;
+  font-weight: bolder;
+  text-shadow: ivory 2px 2px 2px;
+  padding: 20px;
 }
 body {
   background-color: seashell;
@@ -111,7 +158,7 @@ ul.container3 {
   display: flex;
   flex-direction: column-reverse;
 }
-h2 {
+h2 .h2 {
   padding-left: 95px;
 }
 #tower3 {
@@ -119,4 +166,15 @@ h2 {
   height: 205x;
   border: 5px solid purple;
   border-bottom: purple solid 15px;
+}
+#openReset {
+  padding: 20px 900px 115px;
+  background-image: url("/photos/grassBlock.png");
+  background-size: contain;
+  border: none;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  text-shadow: rgb(165, 157, 157) 1px 1px 1px;
+  cursor: pointer;
 }
