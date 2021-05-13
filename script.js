@@ -93,9 +93,19 @@ nevermind.addEventListener("click", closeR);
 restart.addEventListener("click", yes);
 
 function yes() {
-  if (confirm(`Yes I'm sure, I'm sure`)) {
-    self.location = "index.html";
+  if (confirm(`Really? You want to start over??`)) {
+    openDied();
+    // self.location = "index.html";
   } else {
     closeR();
   }
+}
+function openDied() {
+  let deathMessage = window.open(
+    "https://static.wikia.nocookie.net/minecraft/images/e/e3/Screenshot_20200715-153114_Minecraft.jpg/revision/latest?cb=20200715124734"
+  );
+  setTimeout(function () {
+    deathMessage.close();
+    self.location = "index.html";
+  }, 2000);
 }

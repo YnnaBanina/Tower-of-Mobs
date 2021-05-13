@@ -13,6 +13,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Sofia&effect=neon"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=3d">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=emboss">
     <link rel="stylesheet" href="style.css" />
     <title>Tower of Mobs</title>
   </head>
@@ -109,10 +111,12 @@
     <button id="openReset">Reset</button>
     <div id="resetOpened">
       <div id="resetText">
-        <p>Are You Sure You Want To Restart?</p>
-        <p>You'll Lose Your Progress!!</p>
-        <a href="#" id="nevermind">Close</a>
-        <a href="#" id="continue">Reset</a>
+        <p id="reset1" class="font-effect-3d">Are You Sure You Want To Restart?</p>
+        <p id="reset2" class="font-effect-emboss">You'll Lose Your Progress!!</p>
+        <span class="flexButtons"> 
+        <button id="nevermind">Close</button>
+        <button id="continue">Reset</button>
+      </span>
       </div>
     </div>
   </body>

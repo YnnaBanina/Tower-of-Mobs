@@ -12,7 +12,7 @@
   z-index: 1;
 }
 #resetOpened {
-  /* background-color: red; */
+  background-color: rgba(41, 158, 41, 0.62);
   display: none;
   height: 100%;
   left: 0;
@@ -31,7 +31,8 @@
   width: 650px;
 }
 #resetText {
-  background-color: blue;
+  background-image: url("/photos/peekingCreeper.png");
+  box-shadow: rgb(97, 96, 96) 5px 5px 5px;
   border-radius: 2px;
   height: 450px;
   margin: 150px auto;
@@ -51,6 +52,24 @@ div#resetText p {
   border: none;
   text-shadow: gray 2px 2px;
   cursor: pointer;
+}
+#reset1 {
+  font-size: x-large;
+}
+#reset2 {
+  color: white;
+  font-size: x-large;
+}
+span.flexButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+#nevermind {
+  grid-row: 1;
+}
+#continue {
+  grid-row: 3;
 }
 #mTitle {
   text-align: center;
