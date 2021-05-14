@@ -29,9 +29,9 @@ Tower of Mobs is my take on the Tower of Hanoi puzzle game. It contains 6 disks 
  Unresolved Stretch Goals 
  - using an API for mob noises 
  - add a timer gamemode 
+
  **Major Wins** 
- - player is not able to place larger tower pieces on top of smaller pieces 
- - css
+After several attempts, I was finally able to get javascript to check if the disk you are holding (via drag and drop) was larger and stopped the player from placing larger disks on top of smaller disks. CSS was also a fun part of the project, it exceeded my expectations of final look of the game overall. 
 
 ## Wireframes 
 ---
