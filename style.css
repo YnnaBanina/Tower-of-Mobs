@@ -231,3 +231,9 @@ h2 .h2 {
 img {
   cursor: grab;
 }
+@media screen and (max-width: 480px) {
+  body {
+    height: 50vh;
+    width: 50vh;
+  }
+}
