@@ -48,12 +48,6 @@ function drop(event) {
     holding2.push(childClassNum);
     console.log(`update of holding2 after placing a new disk`);
     console.log(holding2);
-
-    //  -------runs as null
-    // console.log(`logging the last child test`);
-    // console.log(lastChild);
-
-    //---------------comparing the holding array and the children to allow the drop to work
   }
   // -------------------create array for each tower
   if (holding < holding2 || holding2.length == 0) {
@@ -70,7 +64,12 @@ function dropExtended(event) {
   let winningTower = document.querySelector(".container3");
   let winningTowerChildren = winningTower.children;
   if (winningTowerChildren.length === 6) {
-    window.alert(`you win!!!`);
+    let winnerPopup = document.querySelector(".winStatement");
+    winnerPopup.style.opacity = 1;
+    setTimeout(function () {
+      winnerPopup.style.opacity = 0;
+      self.location = "index.html";
+    }, 5000);
   }
 }
 
