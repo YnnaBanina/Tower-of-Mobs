@@ -1,6 +1,6 @@
 /* STYLING THE INFO BOX */
 #modal {
-  background-image: url("Tower-of-Mobs/photos/endBackground.png");
+  background-image: url("/Tower-of-Mobs/photos/endBackground.png");
   background-size: contain;
   display: none;
   height: 100%;
@@ -89,7 +89,7 @@ span.flexButtons {
   text-shadow: rgb(91, 150, 170) 2px 2px 2px;
 }
 #close {
-  background-image: url("Tower-of-Mobs/photos/moon.png");
+  background-image: url("/Tower-of-Mobs/photos/moon.png");
   background-size: cover;
   font-weight: bolder;
   text-shadow: ivory 2px 2px 2px;
@@ -188,7 +188,7 @@ h2 .h2 {
 }
 #openReset {
   padding: 20px 900px 115px;
-  background-image: url("Tower-of-Mobs/photos/grassBlock.png");
+  background-image: url("/Tower-of-Mobs/photos/grassBlock.png");
   background-size: contain;
   border: none;
   font-weight: bolder;
@@ -204,7 +204,7 @@ h2 .h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 4rem;
-  background-image: url("Tower-of-Mobs/photos/animalLove.png");
+  background-image: url("/Tower-of-Mobs/photos/animalLove.png");
   background-size: contain;
   z-index: 10;
   opacity: 0;
