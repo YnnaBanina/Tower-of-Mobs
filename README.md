@@ -16,10 +16,10 @@ _Can you move the mobs to the last tower?_
 
 ---
 
+- CSS
+- HTML
 - JavaScript
 - Procreate
-- HTML
-- CSS
 
 ### Installation
 
@@ -28,6 +28,7 @@ _Can you move the mobs to the last tower?_
 - clone the repository into a local file
 - open terminal and navigate to repository
 - open index.html
+- Or click this url
 
 ### Goals
 
