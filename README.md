@@ -8,7 +8,7 @@ Minecraft remake of Tower of Hanoi
 
 ---
 
-Tower of Mobs is my take on the Tower of Hanoi puzzle game. It contains 6 disks that the player has to move to the last tower.
+Tower of Mobs is my take on the Tower of Hanoi puzzle game. It contains 6 disks that the player has to move to the last tower. HOWEVER larger disks cannot be placed on top of smaller disks.
 
 _Can you move the mobs to the last tower?_
 
@@ -28,7 +28,7 @@ _Can you move the mobs to the last tower?_
 - clone the repository into a local file
 - open terminal and navigate to repository
 - open index.html
-- Or click this url
+- Or click this url https://ynnabanina.github.io/Tower-of-Mobs/
 
 ### Goals
 
