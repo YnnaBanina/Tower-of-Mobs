@@ -8,7 +8,7 @@ Minecraft remake of Tower of Hanoi
 
 ---
 
-Tower of Mobs is my take on the Tower of Hanoi puzzle game. It contains 6 disks that the player has to move to the last tower. HOWEVER larger disks cannot be placed on top of smaller disks.
+Tower of Mobs is my take on the Tower of Hanoi puzzle game. It contains 6 disks that the player has to move to the last tower. HOWEVER larger disks cannot be placed on top of smaller disks. If you forget how to play, there is an info button in the clouds. Be careful because it takes you to the *end.* andd if you get too lost you can restart in the ground because thats where that game will go.... 
 
 _Can you move the mobs to the last tower?_
 
